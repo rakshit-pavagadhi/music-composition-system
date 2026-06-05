@@ -1,0 +1,14 @@
+flask
+flask-cors
+flask-sqlalchemy
+flask-login
+flask-bcrypt
+transformers
+torch
+torchvision
+torchaudio
+librosa
+numpy
+joblib
+soundfile
+gradio

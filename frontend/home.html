@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Music Composition System | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>AI-Based Music Composition System</h2>
+        <div class="nav-user">
+            <span id="user-display">Welcome!</span>
+        </div>
+        <ul>
+            <li><a href="#" class="nav-link active" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" class="nav-link" onclick="showSection('history')">History</a></li>
+            <li><a href="#" class="nav-link" onclick="showSection('samples')">Samples</a></li>
+            <li><a href="#" class="nav-link" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="content-wrapper">
+        <section id="home" class="section active">
+            <!-- How It Works Section -->
+            <div class="how-it-works">
+                <h3>✨ How It Works</h3>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-icon">📝</div>
+                        <h4>Step 1: Describe</h4>
+                        <p>Enter a text description of the music you want to create. Be creative!</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">🤖</div>
+                        <h4>Step 2: AI Magic</h4>
+                        <p>Our AI processes your prompt and composes unique music just for you.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">🎧</div>
+                        <h4>Step 3: Listen</h4>
+                        <p>Play your generated music instantly and save it to your history.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Generator Section -->
+            <div class="generator">
+                <h2>Generate Music from Text 🎶</h2>
+                <textarea id="musicPrompt" placeholder="Example: Energetic rock with drums and guitar, upbeat tempo..."></textarea>
+                <button onclick="generateMusic()">🎵 Generate Music</button>
+                <div id="musicResult"></div>
+            </div>
+        </section>
+        <section id="history" class="section">
+            <h2>🎧 Your Music History</h2>
+            <ul id="historyList"></ul>
+        </section>
+        <section id="samples" class="section">
+            <h2>🎼 Sample Prompts & Outputs</h2>
+            <div class="sample-container">
+                <div class="sample">
+                    <p><b>Prompt:</b> Energetic rock drums and guitar</p>
+                    <audio controls src="http://127.0.0.1:5000/play/energetic_rock_drums_and_guitar_classical_183803"></audio>
+                </div>
+                <div class="sample">
+                    <p><b>Prompt:</b> Romantic calm guitar</p>
+                    <audio controls src="http://127.0.0.1:5000/play/romantic_calm_guitar_classical_184435"></audio>
+                </div>
+                <div class="sample">
+                    <p><b>Prompt:</b> Happy and energetic</p>
+                    <audio controls src="http://127.0.0.1:5000/play/happy_and_energetic_classical_172257"></audio>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
