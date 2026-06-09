@@ -7,7 +7,7 @@
 - **`m3.py`**: Core ML + generation code and an optional Gradio demo. See [m3.py](m3.py).
 - **`requirements.txt`**: Python dependencies. See [requirements.txt](requirements.txt).
 - **`checkpoints/`**: Saved ML artifacts (RandomForest, scaler, label encoder). Example files are in this folder: [checkpoints/label_encoder.joblib](checkpoints/label_encoder.joblib), [checkpoints/random_forest.joblib](checkpoints/random_forest.joblib), [checkpoints/scaler.joblib](checkpoints/scaler.joblib).
-- **`dataset/`**: Audio dataset organized by genre (subfolders like `blues`, `classical`, ...). See [dataset](dataset).
+- **`dataset/`**: Audio dataset organized by genre (subfolders like `blues`, `classical`, `country`, `disco`, `hiphop`, `jazz`, `metal`, `pop`, `reggae`, `rock`...).
 - **`frontend/`**: Static frontend pages (`index.html`, `home.html`, `script.js`, `style.css`).
 - **`outputs/`**: Generated WAV files are saved here at runtime.
 
