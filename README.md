@@ -32,7 +32,7 @@ These libraries are listed in [requirements.txt](requirements.txt).
 	- `random_forest.joblib` — trained RandomForest classifier
 	- `scaler.joblib` — feature scaler used during training
 	- `label_encoder.joblib` — label encoder mapping genre indices to names
-- Generated WAVs are saved to [outputs/](outputs) by default. The Flask endpoint returns a playable URL, and the Gradio demo returns audio directly.
+- Generated WAVs are saved to outputs by default. The Flask endpoint returns a playable URL, and the Gradio demo returns audio directly.
 
 **Hardware / Performance Notes**
 - Meta MusicGen is large and may require significant RAM and compute. For reasonable speed, run with a CUDA-enabled GPU and an appropriate PyTorch build. On CPU it will be slow and may be memory-limited.
